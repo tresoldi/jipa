@@ -7,6 +7,7 @@
     ],
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#StructureDataset",
     "dc:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "dc:source": "sources.bib",
     "dc:title": "CLDF dataset with phoneme inventories from the \"Journal of the IPA\", aggregated by Baird et al. (forth)",
     "dcat:accessURL": "https://github.com/cldf-datasets/jipa",
     "prov:wasDerivedFrom": [
@@ -14,7 +15,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "307e8d2"
+            "dc:created": "8ca7a35"
         },
         {
             "rdf:type": "prov:Entity",
@@ -26,7 +27,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.7.7"
+            "dc:description": "3.7.9"
         },
         {
             "dc:title": "python-packages",

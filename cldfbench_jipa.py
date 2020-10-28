@@ -12,6 +12,7 @@ import re
 from pyglottolog import Glottolog
 from pyclts import CLTS, models
 
+from pycldf import Sources
 from cldfbench import CLDFSpec
 from cldfbench import Dataset as BaseDataset
 from clldutils.misc import slug
@@ -124,6 +125,10 @@ class Dataset(BaseDataset):
         clts_path = Path.home() / ".config" / "cldf" / "clts"
         clts = CLTS(clts_path)
 
+        # Add the bibliographic info
+        sources = Sources.from_file(self.raw_dir / "sources.bib")
+        args.writer.cldf.add_sources(*sources)
+
         # Add components
         args.writer.cldf.add_columns(
             "ValueTable",
@@ -169,6 +174,9 @@ class Dataset(BaseDataset):
 
             languages.append(row)
 
+        # Build source map from language
+        source_map = {lang["ID"]: lang["Source"] for lang in languages}
+
         # Parse sources
         segments = []
         values = []
@@ -212,7 +220,7 @@ class Dataset(BaseDataset):
                         "Parameter_ID": par_id,
                         "Value": segment,
                         "Contribution_ID": lang_key,
-                        "Source": [],  # contents['source']
+                        "Source": [source_map[lang_key]],
                         "Catalog": "jipa",
                     }
                 )
