@@ -125,7 +125,7 @@ class Dataset(BaseDataset):
         clts_path = Path.home() / ".config" / "cldf" / "clts"
         clts_path = Path.home() / "src" / "INVENTORIES" / "clts"
         clts = CLTS(clts_path.absolute())
-        clts_phoible = clts.transcriptiondata("jipa")
+        clts_jipa = clts.transcriptiondata("jipa")
 
         # Add the bibliographic info
         sources = Sources.from_file(self.raw_dir / "sources.bib")
@@ -205,8 +205,8 @@ class Dataset(BaseDataset):
                 # Due to the behavior of `.resolve_grapheme`, we need to attempt,
                 # paying attention to raised exceptions, to convert in different ways
                 sound = clts.bipa[
-                    clts_phoible.grapheme_map.get(
-                        segment, clts_phoible.grapheme_map.get(normalized, "")
+                    clts_jipa.grapheme_map.get(
+                        segment, clts_jipa.grapheme_map.get(normalized, "")
                     )
                 ]
                 if isinstance(sound, models.UnknownSound):
