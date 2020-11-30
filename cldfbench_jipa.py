@@ -123,7 +123,9 @@ class Dataset(BaseDataset):
         # TODO: how to call CLTS?
         glottolog = Glottolog(args.glottolog.dir)
         clts_path = Path.home() / ".config" / "cldf" / "clts"
-        clts = CLTS(clts_path)
+        clts_path = Path.home() / "src" / "INVENTORIES" / "clts"
+        clts = CLTS(clts_path.absolute())
+        clts_phoible = clts.transcriptiondata("jipa")
 
         # Add the bibliographic info
         sources = Sources.from_file(self.raw_dir / "sources.bib")
@@ -199,7 +201,17 @@ class Dataset(BaseDataset):
             for segment in all_segments:
                 # Obtain the corresponding BIPA grapheme, is possible
                 normalized = normalize_grapheme(segment)
-                sound = clts.bipa[normalized]
+
+                # Due to the behavior of `.resolve_grapheme`, we need to attempt,
+                # paying attention to raised exceptions, to convert in different ways
+                sound = clts.bipa[
+                    clts_phoible.grapheme_map.get(
+                        segment, clts_phoible.grapheme_map.get(normalized, "")
+                    )
+                ]
+                if isinstance(sound, models.UnknownSound):
+                    sound = clts.bipa[normalized]
+
                 if isinstance(sound, models.UnknownSound):
                     par_id = "UNK_" + compute_id(normalized)
                     bipa_grapheme = ""
