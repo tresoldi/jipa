@@ -169,7 +169,7 @@ class Dataset(BaseDataset):
             primaryKey="ID")
 
         languages = []
-        all_glottolog = {}#lng.id: lng for lng in glottolog.languoids()}
+        all_glottolog = {lng.id: lng for lng in glottolog.languoids()}
         for row in progressbar(
                 self.etc_dir.read_csv("languages.csv", dicts=True)):
             if row["Glottocode"] and row["Glottocode"] in all_glottolog:
@@ -249,7 +249,6 @@ class Dataset(BaseDataset):
         ]
 
         # Write data and validate
-        inventories = []
         args.writer.write(**{
                 "ValueTable": values,
                 "LanguageTable": languages,
