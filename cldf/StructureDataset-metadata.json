@@ -15,19 +15,19 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "c085f43"
+            "dc:created": "87f4bfe"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Glottolog",
             "rdf:about": "https://github.com/glottolog/glottolog",
-            "dc:created": "v4.3-treedb-fixes-289-gccb8b80"
+            "dc:created": "v4.3"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.7.9"
+            "dc:description": "3.8.2"
         },
         {
             "dc:title": "python-packages",
@@ -42,7 +42,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 6649,
+            "dc:extent": 6660,
             "tableSchema": {
                 "columns": [
                     {
@@ -96,16 +96,12 @@
                         "name": "Source"
                     },
                     {
-                        "datatype": "boolean",
-                        "name": "Marginal"
+                        "datatype": "integer",
+                        "name": "InventorySize"
                     },
                     {
                         "datatype": "string",
-                        "name": "Catalog"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Contribution_ID"
+                        "name": "Value_in_Source"
                     }
                 ],
                 "foreignKeys": [
@@ -114,7 +110,7 @@
                             "Parameter_ID"
                         ],
                         "reference": {
-                            "resource": "parameters.csv",
+                            "resource": "features.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -140,7 +136,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 975,
+            "dc:extent": 957,
             "tableSchema": {
                 "columns": [
                     {
@@ -166,14 +162,18 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "BIPA"
+                        "name": "CLTS_BIPA"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "CLTS_Name"
                     }
                 ],
                 "primaryKey": [
                     "ID"
                 ]
             },
-            "url": "parameters.csv"
+            "url": "features.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
@@ -242,11 +242,7 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Family_Glottocode"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Family_Name"
+                        "name": "Family"
                     },
                     {
                         "datatype": "string",
@@ -260,7 +256,6 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 0,
             "tableSchema": {
                 "columns": [
                     {
