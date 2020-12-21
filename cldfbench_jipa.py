@@ -7,7 +7,6 @@ import json
 import unicodedata
 from pathlib import Path
 from unidecode import unidecode
-import re
 
 from pyglottolog import Glottolog
 from pyclts import CLTS, models
@@ -17,6 +16,10 @@ from cldfbench import CLDFSpec
 from cldfbench import Dataset as BaseDataset
 from clldutils.misc import slug
 
+from cldfcatalog.config import Config
+from collections import defaultdict
+from tqdm import tqdm as progressbar
+from clldutils.text import split_text_with_context, strip_brackets
 
 def compute_id(text):
     """
@@ -35,16 +38,15 @@ def normalize_grapheme(text):
     Apply simple, non-CLTS, normalization.
     """
 
-    text = unicodedata.normalize("NFC", text)
+    new_text = unicodedata.normalize("NFD", text)
+    
 
-    if text[0] == "(" and text[-1] == ")":
-        text = text[1:-1]
+    if new_text[0] == "(" and new_text[-1] == ")":
+        new_text = new_text[1:-1]
 
-    if text[0] == "[" and text[-1] == "]":
-        text = text[1:-1]
-
-    return text
-
+    new_text = strip_brackets(new_text)
+    if new_text:
+        return new_text
 
 def read_raw_source(filename):
     def _splitter(text):
@@ -53,9 +55,19 @@ def read_raw_source(filename):
 
         We need to split by commas, provided they are not within parentheses (used to
         list allophones). This solution uses a negative-lookahead in regex.
-        """
-        items = [item.strip() for item in re.split(",\s*(?![^()]*\))", text)]
-        return [item for item in items if item]
+        """ 
+        # errors in files
+        text = text.replace('\u032al', 'l̪')
+        text = text.replace('\u2019', '\u02bc')
+        text = text.replace('r (r, z)', 'r(r, z)')
+        text = text.replace('eː (e:, é:, è:, êː)', 'eː(e:, é:, è:, êː)')
+        text = text.replace('ɔ̤ (ɔ̤, ɔ̤́, ɔ̤̀, ɔ̤̌, ɔ̤̂)', 'ɔ̤(ɔ̤, ɔ̤́, ɔ̤̀, ɔ̤̌, ɔ̤̂)')
+        text = text.replace('v ̼(v̼, ɸ, β, v, f)', 'v̼(v̼, ɸ, β, v, f)')
+        items = split_text_with_context(text, "[ ,;]")
+        out = []
+        for item in items:
+            out += [item]
+        return out
 
     # Holds the label to the current section of data
     section = None
@@ -64,8 +76,8 @@ def read_raw_source(filename):
         "source": None,
         "language_name": None,
         "iso_code": None,
-        "consonants": [],
-        "vowels": [],
+        "consonants": '',
+        "vowels": '',
     }
 
     # Iterate over all lines
@@ -86,46 +98,45 @@ def read_raw_source(filename):
             elif section == "ISO Code":
                 data["iso_code"] = line
             elif section == "Consonant Inventory":
-                data["consonants"] += _splitter(line)
+                data["consonants"] += ' '+line
             elif section == "Vowel Inventory":
-                data["vowels"] += _splitter(line)
+                data["vowels"] += ' '+line
+            elif section in [
+                    "Phoneme inventory size",
+                    "Phoneme invetory size",
+                    "Size of phoneme inventory"
+                    ]:
+                data["inventory"] = int(line)
+    data['consonants'] = _splitter(data['consonants'].strip())
+    data['vowels'] = _splitter(data['vowels'].strip())
 
     return data
 
 
 class Dataset(BaseDataset):
     """
-    CLDF dataset for inventories.
+    CLDF dataset for JIPA inventories.
     """
 
     dir = Path(__file__).parent
     id = "jipa"
 
-    def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
-        return CLDFSpec(dir=self.cldf_dir, module="StructureDataset")
-
-    def cmd_download(self, args):
-        """
-        Download files to the raw/ directory. You can use helpers methods of `self.raw_dir`, e.g.
-
-        >>> self.raw_dir.download(url, fname)
-        """
-        pass
+    def cldf_specs(self):
+        return CLDFSpec(
+                module='StructureDataset',
+                dir=self.cldf_dir,
+                data_fnames={'ParameterTable': 'features.csv'}
+            )
 
     def cmd_makecldf(self, args):
-        """
-        Convert the raw data to a CLDF dataset.
 
-        >>> args.writer.objects['LanguageTable'].append(...)
-        """
-
-        # Instantiate Glottolog and CLTS
-        # TODO: how to call CLTS?
         glottolog = Glottolog(args.glottolog.dir)
-        clts_path = Path.home() / ".config" / "cldf" / "clts"
-        clts_path = Path.home() / "src" / "INVENTORIES" / "clts"
-        clts = CLTS(clts_path.absolute())
-        clts_jipa = clts.transcriptiondata("jipa")
+        clts = CLTS(Config.from_file().get_clone('clts'))
+        bipa = clts.bipa
+        clts_jipa = clts.transcriptiondata_dict['jipa']
+
+        # mapper for the data (where splitting failed)
+
 
         # Add the bibliographic info
         sources = Sources.from_file(self.raw_dir / "sources.bib")
@@ -134,15 +145,15 @@ class Dataset(BaseDataset):
         # Add components
         args.writer.cldf.add_columns(
             "ValueTable",
-            {"name": "Marginal", "datatype": "boolean"},
-            "Catalog",
-            "Contribution_ID",
-        )
+            {"name": "InventorySize", "datatype": "integer"},
+            {"name": "Value_in_Source", "datatype": "string"})
 
-        args.writer.cldf.add_component("ParameterTable", "BIPA")
+        args.writer.cldf.add_columns(
+                    'ParameterTable',
+                    {'name': 'CLTS_BIPA', 'datatype': 'string'},
+                    {'name': 'CLTS_Name', 'datatype': 'string'})
         args.writer.cldf.add_component(
-            "LanguageTable", "Family_Glottocode", "Family_Name", "Glottolog_Name"
-        )
+            "LanguageTable", "Family", "Glottolog_Name")
         args.writer.cldf.add_table(
             "inventories.csv",
             "ID",
@@ -155,17 +166,16 @@ class Dataset(BaseDataset):
             },
             "URL",
             "Tones",
-            primaryKey="ID",
-        )
+            primaryKey="ID")
 
-        # load language mapping and build inventory info
         languages = []
-        for row in self.etc_dir.read_csv("languages.csv", dicts=True):
-            if row["Glottocode"]:
-                lang = glottolog.languoid(row["Glottocode"])
+        all_glottolog = {lng.id: lng for lng in glottolog.languoids()}
+        for row in progressbar(
+                self.etc_dir.read_csv("languages.csv", dicts=True)):
+            if row["Glottocode"] and row["Glottocode"] in all_glottolog:
+                lang = all_glottolog[row["Glottocode"]]
                 update = {
-                    "Family_Glottocode": lang.lineage[0][1] if lang.lineage else None,
-                    "Family_Name": lang.lineage[0][0] if lang.lineage else None,
+                    "Family": lang.family.name if lang.family else '',
                     "Glottocode": row["Glottocode"],
                     "Latitude": lang.latitude,
                     "Longitude": lang.longitude,
@@ -173,7 +183,6 @@ class Dataset(BaseDataset):
                     "Glottolog_Name": lang.name,
                 }
                 row.update(update)
-
             languages.append(row)
 
         # Build source map from language
@@ -184,73 +193,67 @@ class Dataset(BaseDataset):
         values = []
         counter = 1
         source_files = list(self.raw_dir.glob("*.txt"))
+        unknowns = defaultdict(list)
         for filename in source_files:
             contents = read_raw_source(filename)
-
-            # TODO: Only keeping the main entry of allophones for now; we cannot just
-            # strip parentheses and what is inside, as the notation (somewhat ambigous)
-            # is also used for marginal sounds
+            if not "inventory" in contents:
+                args.log.warn('inventory size missing for {0}'.format(
+                    filename))
+                isize = -1
+            else:
+                isize = contents['inventory']
             all_segments = []
             for segment in contents["consonants"] + contents["vowels"]:
-                if segment[0] == "(" and segment[-1] == ")":
-                    all_segments.append(segment)
-                else:
-                    stripped = re.sub(r"\([^)]*\)", "", segment)
-                    all_segments.append(stripped)
+                all_segments.append(segment)
+            lang_key = slug(contents["language_name"])
 
             for segment in all_segments:
-                # Obtain the corresponding BIPA grapheme, is possible
                 normalized = normalize_grapheme(segment)
-
-                # Due to the behavior of `.resolve_grapheme`, we need to attempt,
-                # paying attention to raised exceptions, to convert in different ways
-                sound = clts.bipa[
-                    clts_jipa.grapheme_map.get(
-                        segment, clts_jipa.grapheme_map.get(normalized, "")
-                    )
-                ]
-                if isinstance(sound, models.UnknownSound):
-                    sound = clts.bipa[normalized]
-
-                if isinstance(sound, models.UnknownSound):
-                    par_id = "UNK_" + compute_id(normalized)
-                    bipa_grapheme = ""
-                    desc = ""
+                if normalized in clts_jipa.grapheme_map:
+                    sound = bipa[normalized]
                 else:
-                    par_id = "BIPA_" + compute_id(normalized)
+                    sound = bipa['<NA>']
+                    unknowns[normalized] += [(lang_key, segment)]
+                par_id = compute_id(normalized)
+                if sound.type == 'unknownsound':
+                    bipa_grapheme = ''
+                    desc = ''
+                else:
                     bipa_grapheme = str(sound)
                     desc = sound.name
+
                 segments.append((par_id, normalized, bipa_grapheme, desc))
 
-                # TODO: do marginal
-                lang_key = slug(contents["language_name"])
                 values.append(
                     {
                         "ID": str(counter),
                         "Language_ID": lang_key,
-                        "Marginal": False,
                         "Parameter_ID": par_id,
-                        "Value": segment,
-                        "Contribution_ID": lang_key,
+                        "Value_in_Source": segment,
+                        "Value": normalized,
                         "Source": [source_map[lang_key]],
-                        "Catalog": "jipa",
+                        "InventorySize": isize 
                     }
                 )
                 counter += 1
 
         # Build segment data
         parameters = [
-            {"ID": id, "Name": normalized, "BIPA": bipa_grapheme, "Description": desc}
-            for id, normalized, bipa_grapheme, desc in set(segments)
+            {
+                "ID": ID, 
+                "Name": normalized,
+                "Description": '',
+                "CLTS_BIPA": bipa_grapheme,
+                "CLTS_Name": desc}
+            for ID, normalized, bipa_grapheme, desc in set(segments)
         ]
 
         # Write data and validate
-        inventories = []
-        args.writer.write(
-            **{
+        args.writer.write(**{
                 "ValueTable": values,
                 "LanguageTable": languages,
-                "ParameterTable": parameters,
-                "inventories.csv": inventories,
-            }
-        )
+                "ParameterTable": parameters,})
+        for g, rest in unknowns.items():
+            print('\t'.join(
+                [
+                    repr(g), str(len(rest)), g]))
