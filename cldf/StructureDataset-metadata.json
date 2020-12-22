@@ -15,7 +15,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "82696a8"
+            "dc:created": "7b90fef"
         },
         {
             "rdf:type": "prov:Entity",
@@ -254,41 +254,6 @@
                 ]
             },
             "url": "languages.csv"
-        },
-        {
-            "tableSchema": {
-                "columns": [
-                    {
-                        "datatype": "string",
-                        "name": "ID"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Name"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Contributor_ID"
-                    },
-                    {
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
-                        "separator": ";",
-                        "name": "Source"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "URL"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Tones"
-                    }
-                ],
-                "primaryKey": [
-                    "ID"
-                ]
-            },
-            "url": "inventories.csv"
         }
     ]
 }

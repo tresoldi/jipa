@@ -39,7 +39,6 @@ def normalize_grapheme(text):
     """
 
     new_text = unicodedata.normalize("NFD", text)
-    
 
     if new_text[0] == "(" and new_text[-1] == ")":
         new_text = new_text[1:-1]
@@ -135,9 +134,6 @@ class Dataset(BaseDataset):
         bipa = clts.bipa
         clts_jipa = clts.transcriptiondata_dict['jipa']
 
-        # mapper for the data (where splitting failed)
-
-
         # Add the bibliographic info
         sources = Sources.from_file(self.raw_dir / "sources.bib")
         args.writer.cldf.add_sources(*sources)
@@ -154,19 +150,6 @@ class Dataset(BaseDataset):
                     {'name': 'CLTS_Name', 'datatype': 'string'})
         args.writer.cldf.add_component(
             "LanguageTable", "Family", "Glottolog_Name")
-        args.writer.cldf.add_table(
-            "inventories.csv",
-            "ID",
-            "Name",
-            "Contributor_ID",
-            {
-                "name": "Source",
-                "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
-                "separator": ";",
-            },
-            "URL",
-            "Tones",
-            primaryKey="ID")
 
         languages = []
         all_glottolog = {lng.id: lng for lng in glottolog.languoids()}
@@ -210,7 +193,7 @@ class Dataset(BaseDataset):
             for segment in all_segments:
                 normalized = normalize_grapheme(segment)
                 if normalized in clts_jipa.grapheme_map:
-                    sound = bipa[normalized]
+                    sound = bipa[clts_jipa.grapheme_map[normalized]]
                 else:
                     sound = bipa['<NA>']
                     unknowns[normalized] += [(lang_key, segment)]

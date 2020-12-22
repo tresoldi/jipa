@@ -2,9 +2,9 @@ appdirs==1.4.4
 certifi==2020.12.5
 chardet==4.0.0
 cldfbench==1.3.0
--e git+https://github.com/cldf-datasets/eurasianinventories@afe422b9411cb38793c19decf176499ef020515e#egg=cldfbench_eurasianinventories
--e git+https://github.com/cldf-datasets/jipa.git@82696a8889e5ec5bb2d8c20e661cae6f23f03dcf#egg=cldfbench_jipa
--e git+https://github.com/cldf-datasets/lapsyd/@b7c53406d500aed65f9cff311a536f89eea43d27#egg=cldfbench_lapsyd
+-e git+https://github.com/cldf-datasets/eurasianinventories@9cc35ea62bf1dc395384dea962fdfb2354617330#egg=cldfbench_eurasianinventories
+-e git+https://github.com/cldf-datasets/jipa.git@7b90fefcb9b82a80309528941d3d21810de99689#egg=cldfbench_jipa
+-e git+https://github.com/cldf-datasets/lapsyd/@d33bb0ef58080dc737792e71a072bcc89af03351#egg=cldfbench_lapsyd
 cldfcatalog==1.3.0
 clldutils==3.6.0
 colorlog==4.6.2
