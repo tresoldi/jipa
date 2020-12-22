@@ -15,7 +15,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "bca4631"
+            "dc:created": "82696a8"
         },
         {
             "rdf:type": "prov:Entity",
@@ -27,7 +27,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.2"
+            "dc:description": "3.6.12"
         },
         {
             "dc:title": "python-packages",

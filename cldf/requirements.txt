@@ -3,8 +3,8 @@ certifi==2020.12.5
 chardet==4.0.0
 cldfbench==1.3.0
 -e git+https://github.com/cldf-datasets/eurasianinventories@afe422b9411cb38793c19decf176499ef020515e#egg=cldfbench_eurasianinventories
--e git+https://github.com/cldf-datasets/jipa.git@bca4631b413224f918cad2a5993615cb77010b47#egg=cldfbench_jipa
--e git+https://github.com/cldf-datasets/lapsyd/@f397605b78f6b8d243289efe612a8d5343418f33#egg=cldfbench_lapsyd
+-e git+https://github.com/cldf-datasets/jipa.git@82696a8889e5ec5bb2d8c20e661cae6f23f03dcf#egg=cldfbench_jipa
+-e git+https://github.com/cldf-datasets/lapsyd/@b7c53406d500aed65f9cff311a536f89eea43d27#egg=cldfbench_lapsyd
 cldfcatalog==1.3.0
 clldutils==3.6.0
 colorlog==4.6.2
@@ -13,18 +13,14 @@ gitdb==4.0.5
 idna==2.10
 iniconfig==1.1.1
 isodate==0.6.0
-jdcal==1.4.1
 Markdown==3.3.3
 newick==1.0.0
-numpy==1.19.4
-openpyxl==3.0.5
 pluggy==0.13.1
 purl==1.5
 py==1.10.0
 pybtex==0.23.0
 pycldf==1.17.0
 -e git+https://github.com/cldf-clts/pyclts@b9f689d2778f98d8e3f435655e160cf7dcf43557#egg=pyclts
-pyconcepticon==2.7.0
 pycountry==20.7.3
 pyglottolog==3.3.0
 pytest==6.2.1
@@ -32,12 +28,12 @@ requests==2.25.1
 rfc3986==1.4.0
 six==1.15.0
 smmap==3.0.4
-SQLAlchemy==1.3.21
+SQLAlchemy==1.3.22
 tabulate==0.8.7
 termcolor==1.1.0
 tqdm==4.54.1
-Unidecode==1.1.1
+Unidecode==1.1.2
 uritemplate==3.0.1
 urllib3==1.26.2
 wcwidth==0.2.5
-xlrd==2.0.1
+zipp==3.4.0
