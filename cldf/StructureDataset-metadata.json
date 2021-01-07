@@ -15,7 +15,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "05a21b6"
+            "dc:created": "802a1b1"
         },
         {
             "rdf:type": "prov:Entity",
