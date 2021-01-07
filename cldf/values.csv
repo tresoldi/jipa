@@ -2911,37 +2911,37 @@ ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source,InventorySize,Value_in_
 2910,zurichgerman,u_u0075u0259u032F,uə̯,,,jipa_Fleischer2006,55,uə̯
 2911,zurichgerman,aeu_u00E6u0075u032F,æu̯,,,jipa_Fleischer2006,55,æu̯
 2912,zurichgerman,ou_u006Fu0075u032F,ou̯,,,jipa_Fleischer2006,55,ou̯
-2913,indonesian,p_u0070,p,,,jipa_Soderberg2018,31,p
-2914,indonesian,b_u0062,b,,,jipa_Soderberg2018,31,"b(b, p)"
-2915,indonesian,t_u0074u032A,t̪,,,jipa_Soderberg2018,31,t̪
-2916,indonesian,d_u0064,d,,,jipa_Soderberg2018,31,"d(d, t̪)"
-2917,indonesian,ts_u0074u0283,tʃ,,,jipa_Soderberg2018,31,tʃ
-2918,indonesian,dz_u0064u0292,dʒ,,,jipa_Soderberg2018,31,dʒ
-2919,indonesian,k_u006B,k,,,jipa_Soderberg2018,31,"k(k, ʔ, x)"
-2920,indonesian,g_u0067,g,,,jipa_Soderberg2018,31,"g(g, k)"
-2921,indonesian,_u0294,ʔ,,,jipa_Soderberg2018,31,ʔ
-2922,indonesian,m_u006D,m,,,jipa_Soderberg2018,31,m
-2923,indonesian,n_u006E,n,,,jipa_Soderberg2018,31,n
-2924,indonesian,n_u0272,ɲ,,,jipa_Soderberg2018,31,ɲ
-2925,indonesian,ng_u014B,ŋ,,,jipa_Soderberg2018,31,ŋ
-2926,indonesian,r_u0072,r,,,jipa_Soderberg2018,31,"r(r, ɾ)"
-2927,indonesian,f_u0066,f,,,jipa_Soderberg2018,31,"f(f, p)"
-2928,indonesian,s_u0073,s,,,jipa_Soderberg2018,31,s
-2929,indonesian,z_u007A,z,,,jipa_Soderberg2018,31,z
-2930,indonesian,s_u0283,ʃ,,,jipa_Soderberg2018,31,ʃ
-2931,indonesian,h_u0068,h,,,jipa_Soderberg2018,31,h
-2932,indonesian,w_u0077,w,,,jipa_Soderberg2018,31,w
-2933,indonesian,j_u006A,j,,,jipa_Soderberg2018,31,j
-2934,indonesian,l_u006C,l,,,jipa_Soderberg2018,31,l
-2935,indonesian,i_u0069,i,,,jipa_Soderberg2018,31,"i(i, ɪ)"
-2936,indonesian,e_u0065,e,,,jipa_Soderberg2018,31,"e(e, ɛ)"
-2937,indonesian,a_u0061,a,,,jipa_Soderberg2018,31,a
-2938,indonesian,u_u0075,u,,,jipa_Soderberg2018,31,"u(u, ʊ)"
-2939,indonesian,o_u006F,o,,,jipa_Soderberg2018,31,"o(o, ɔ)"
-2940,indonesian,_u0259,ə,,,jipa_Soderberg2018,31,ə
-2941,indonesian,aj_u0061u006A,aj,,,jipa_Soderberg2018,31,aj
-2942,indonesian,aw_u0061u0077,aw,,,jipa_Soderberg2018,31,aw
-2943,indonesian,oj_u006Fu006A,oj,,,jipa_Soderberg2018,31,oj
+2913,indonesian,p_u0070,p,,,jipa_Soderberg2008,31,p
+2914,indonesian,b_u0062,b,,,jipa_Soderberg2008,31,"b(b, p)"
+2915,indonesian,t_u0074u032A,t̪,,,jipa_Soderberg2008,31,t̪
+2916,indonesian,d_u0064,d,,,jipa_Soderberg2008,31,"d(d, t̪)"
+2917,indonesian,ts_u0074u0283,tʃ,,,jipa_Soderberg2008,31,tʃ
+2918,indonesian,dz_u0064u0292,dʒ,,,jipa_Soderberg2008,31,dʒ
+2919,indonesian,k_u006B,k,,,jipa_Soderberg2008,31,"k(k, ʔ, x)"
+2920,indonesian,g_u0067,g,,,jipa_Soderberg2008,31,"g(g, k)"
+2921,indonesian,_u0294,ʔ,,,jipa_Soderberg2008,31,ʔ
+2922,indonesian,m_u006D,m,,,jipa_Soderberg2008,31,m
+2923,indonesian,n_u006E,n,,,jipa_Soderberg2008,31,n
+2924,indonesian,n_u0272,ɲ,,,jipa_Soderberg2008,31,ɲ
+2925,indonesian,ng_u014B,ŋ,,,jipa_Soderberg2008,31,ŋ
+2926,indonesian,r_u0072,r,,,jipa_Soderberg2008,31,"r(r, ɾ)"
+2927,indonesian,f_u0066,f,,,jipa_Soderberg2008,31,"f(f, p)"
+2928,indonesian,s_u0073,s,,,jipa_Soderberg2008,31,s
+2929,indonesian,z_u007A,z,,,jipa_Soderberg2008,31,z
+2930,indonesian,s_u0283,ʃ,,,jipa_Soderberg2008,31,ʃ
+2931,indonesian,h_u0068,h,,,jipa_Soderberg2008,31,h
+2932,indonesian,w_u0077,w,,,jipa_Soderberg2008,31,w
+2933,indonesian,j_u006A,j,,,jipa_Soderberg2008,31,j
+2934,indonesian,l_u006C,l,,,jipa_Soderberg2008,31,l
+2935,indonesian,i_u0069,i,,,jipa_Soderberg2008,31,"i(i, ɪ)"
+2936,indonesian,e_u0065,e,,,jipa_Soderberg2008,31,"e(e, ɛ)"
+2937,indonesian,a_u0061,a,,,jipa_Soderberg2008,31,a
+2938,indonesian,u_u0075,u,,,jipa_Soderberg2008,31,"u(u, ʊ)"
+2939,indonesian,o_u006F,o,,,jipa_Soderberg2008,31,"o(o, ɔ)"
+2940,indonesian,_u0259,ə,,,jipa_Soderberg2008,31,ə
+2941,indonesian,aj_u0061u006A,aj,,,jipa_Soderberg2008,31,aj
+2942,indonesian,aw_u0061u0077,aw,,,jipa_Soderberg2008,31,aw
+2943,indonesian,oj_u006Fu006A,oj,,,jipa_Soderberg2008,31,oj
 2944,belgianstandarddutch,p_u0070,p,,,jipa_Verhoeven2005,40,p
 2945,belgianstandarddutch,b_u0062,b,,,jipa_Verhoeven2005,40,b
 2946,belgianstandarddutch,t_u0074,t,,,jipa_Verhoeven2005,40,t
@@ -3678,45 +3678,45 @@ ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source,InventorySize,Value_in_
 3677,tynesideenglish,aeu_u00E6u0075,æu,,,jipa_Watt2003,52,æu
 3678,tynesideenglish,ua_u0075u0250,uɐ,,,jipa_Watt2003,52,uɐ
 3679,tynesideenglish,oe_u006Fu0065,oe,,,jipa_Watt2003,52,oe
-3680,americanenglishsouthernmichigan,p_u0070,p,,,jipa_Hillebrand2003,39,p
-3681,americanenglishsouthernmichigan,b_u0062,b,,,jipa_Hillebrand2003,39,b
-3682,americanenglishsouthernmichigan,t_u0074,t,,,jipa_Hillebrand2003,39,t
-3683,americanenglishsouthernmichigan,d_u0064,d,,,jipa_Hillebrand2003,39,d
-3684,americanenglishsouthernmichigan,k_u006B,k,,,jipa_Hillebrand2003,39,k
-3685,americanenglishsouthernmichigan,g_u0067,g,,,jipa_Hillebrand2003,39,g
-3686,americanenglishsouthernmichigan,ts_u0074u0283,tʃ,,,jipa_Hillebrand2003,39,tʃ
-3687,americanenglishsouthernmichigan,dz_u0064u0292,dʒ,,,jipa_Hillebrand2003,39,dʒ
-3688,americanenglishsouthernmichigan,m_u006D,m,,,jipa_Hillebrand2003,39,m
-3689,americanenglishsouthernmichigan,n_u006E,n,,,jipa_Hillebrand2003,39,n
-3690,americanenglishsouthernmichigan,ng_u014B,ŋ,,,jipa_Hillebrand2003,39,ŋ
-3691,americanenglishsouthernmichigan,f_u0066,f,,,jipa_Hillebrand2003,39,f
-3692,americanenglishsouthernmichigan,v_u0076,v,,,jipa_Hillebrand2003,39,v
-3693,americanenglishsouthernmichigan,th_u03B8,θ,,,jipa_Hillebrand2003,39,θ
-3694,americanenglishsouthernmichigan,d_u00F0,ð,,,jipa_Hillebrand2003,39,ð
-3695,americanenglishsouthernmichigan,s_u0073,s,,,jipa_Hillebrand2003,39,s
-3696,americanenglishsouthernmichigan,z_u007A,z,,,jipa_Hillebrand2003,39,z
-3697,americanenglishsouthernmichigan,s_u0283,ʃ,,,jipa_Hillebrand2003,39,ʃ
-3698,americanenglishsouthernmichigan,z_u0292,ʒ,,,jipa_Hillebrand2003,39,ʒ
-3699,americanenglishsouthernmichigan,h_u0068,h,,,jipa_Hillebrand2003,39,h
-3700,americanenglishsouthernmichigan,r_u0279,ɹ,,,jipa_Hillebrand2003,39,ɹ
-3701,americanenglishsouthernmichigan,j_u006A,j,,,jipa_Hillebrand2003,39,j
-3702,americanenglishsouthernmichigan,w_u0077,w,,,jipa_Hillebrand2003,39,w
-3703,americanenglishsouthernmichigan,l_u006C,l,,,jipa_Hillebrand2003,39,l
-3704,americanenglishsouthernmichigan,i_u0069,i,,,jipa_Hillebrand2003,39,"i(i, ə)"
-3705,americanenglishsouthernmichigan,i_u026A,ɪ,,,jipa_Hillebrand2003,39,"ɪ(ɪ, ə)"
-3706,americanenglishsouthernmichigan,e_u0065,e,,,jipa_Hillebrand2003,39,"e(e, ə)"
-3707,americanenglishsouthernmichigan,ae_u00E6,æ,,,jipa_Hillebrand2003,39,"æ(æ, ə)"
-3708,americanenglishsouthernmichigan,e_u025B,ɛ,,,jipa_Hillebrand2003,39,"ɛ(ɛ, ə)"
-3709,americanenglishsouthernmichigan,a_u0251,ɑ,,,jipa_Hillebrand2003,39,"ɑ(ɑ, ə)"
-3710,americanenglishsouthernmichigan,o_u0254,ɔ,,,jipa_Hillebrand2003,39,"ɔ(ɔ, ə)"
-3711,americanenglishsouthernmichigan,_u028C,ʌ,,,jipa_Hillebrand2003,39,"ʌ(ʌ, ə)"
-3712,americanenglishsouthernmichigan,o_u006F,o,,,jipa_Hillebrand2003,39,"o(o, ə)"
-3713,americanenglishsouthernmichigan,u_u028A,ʊ,,,jipa_Hillebrand2003,39,"ʊ(ʊ, ə)"
-3714,americanenglishsouthernmichigan,u_u0075,u,,,jipa_Hillebrand2003,39,"u(u, ə)"
-3715,americanenglishsouthernmichigan,_u025A,ɚ,,,jipa_Hillebrand2003,39,ɚ
-3716,americanenglishsouthernmichigan,oi_u0254u026A,ɔɪ,,,jipa_Hillebrand2003,39,ɔɪ
-3717,americanenglishsouthernmichigan,ai_u0061u026A,aɪ,,,jipa_Hillebrand2003,39,aɪ
-3718,americanenglishsouthernmichigan,au_u0061u028A,aʊ,,,jipa_Hillebrand2003,39,aʊ
+3680,americanenglishsouthernmichigan,p_u0070,p,,,jipa_Hillenbrand2003,39,p
+3681,americanenglishsouthernmichigan,b_u0062,b,,,jipa_Hillenbrand2003,39,b
+3682,americanenglishsouthernmichigan,t_u0074,t,,,jipa_Hillenbrand2003,39,t
+3683,americanenglishsouthernmichigan,d_u0064,d,,,jipa_Hillenbrand2003,39,d
+3684,americanenglishsouthernmichigan,k_u006B,k,,,jipa_Hillenbrand2003,39,k
+3685,americanenglishsouthernmichigan,g_u0067,g,,,jipa_Hillenbrand2003,39,g
+3686,americanenglishsouthernmichigan,ts_u0074u0283,tʃ,,,jipa_Hillenbrand2003,39,tʃ
+3687,americanenglishsouthernmichigan,dz_u0064u0292,dʒ,,,jipa_Hillenbrand2003,39,dʒ
+3688,americanenglishsouthernmichigan,m_u006D,m,,,jipa_Hillenbrand2003,39,m
+3689,americanenglishsouthernmichigan,n_u006E,n,,,jipa_Hillenbrand2003,39,n
+3690,americanenglishsouthernmichigan,ng_u014B,ŋ,,,jipa_Hillenbrand2003,39,ŋ
+3691,americanenglishsouthernmichigan,f_u0066,f,,,jipa_Hillenbrand2003,39,f
+3692,americanenglishsouthernmichigan,v_u0076,v,,,jipa_Hillenbrand2003,39,v
+3693,americanenglishsouthernmichigan,th_u03B8,θ,,,jipa_Hillenbrand2003,39,θ
+3694,americanenglishsouthernmichigan,d_u00F0,ð,,,jipa_Hillenbrand2003,39,ð
+3695,americanenglishsouthernmichigan,s_u0073,s,,,jipa_Hillenbrand2003,39,s
+3696,americanenglishsouthernmichigan,z_u007A,z,,,jipa_Hillenbrand2003,39,z
+3697,americanenglishsouthernmichigan,s_u0283,ʃ,,,jipa_Hillenbrand2003,39,ʃ
+3698,americanenglishsouthernmichigan,z_u0292,ʒ,,,jipa_Hillenbrand2003,39,ʒ
+3699,americanenglishsouthernmichigan,h_u0068,h,,,jipa_Hillenbrand2003,39,h
+3700,americanenglishsouthernmichigan,r_u0279,ɹ,,,jipa_Hillenbrand2003,39,ɹ
+3701,americanenglishsouthernmichigan,j_u006A,j,,,jipa_Hillenbrand2003,39,j
+3702,americanenglishsouthernmichigan,w_u0077,w,,,jipa_Hillenbrand2003,39,w
+3703,americanenglishsouthernmichigan,l_u006C,l,,,jipa_Hillenbrand2003,39,l
+3704,americanenglishsouthernmichigan,i_u0069,i,,,jipa_Hillenbrand2003,39,"i(i, ə)"
+3705,americanenglishsouthernmichigan,i_u026A,ɪ,,,jipa_Hillenbrand2003,39,"ɪ(ɪ, ə)"
+3706,americanenglishsouthernmichigan,e_u0065,e,,,jipa_Hillenbrand2003,39,"e(e, ə)"
+3707,americanenglishsouthernmichigan,ae_u00E6,æ,,,jipa_Hillenbrand2003,39,"æ(æ, ə)"
+3708,americanenglishsouthernmichigan,e_u025B,ɛ,,,jipa_Hillenbrand2003,39,"ɛ(ɛ, ə)"
+3709,americanenglishsouthernmichigan,a_u0251,ɑ,,,jipa_Hillenbrand2003,39,"ɑ(ɑ, ə)"
+3710,americanenglishsouthernmichigan,o_u0254,ɔ,,,jipa_Hillenbrand2003,39,"ɔ(ɔ, ə)"
+3711,americanenglishsouthernmichigan,_u028C,ʌ,,,jipa_Hillenbrand2003,39,"ʌ(ʌ, ə)"
+3712,americanenglishsouthernmichigan,o_u006F,o,,,jipa_Hillenbrand2003,39,"o(o, ə)"
+3713,americanenglishsouthernmichigan,u_u028A,ʊ,,,jipa_Hillenbrand2003,39,"ʊ(ʊ, ə)"
+3714,americanenglishsouthernmichigan,u_u0075,u,,,jipa_Hillenbrand2003,39,"u(u, ə)"
+3715,americanenglishsouthernmichigan,_u025A,ɚ,,,jipa_Hillenbrand2003,39,ɚ
+3716,americanenglishsouthernmichigan,oi_u0254u026A,ɔɪ,,,jipa_Hillenbrand2003,39,ɔɪ
+3717,americanenglishsouthernmichigan,ai_u0061u026A,aɪ,,,jipa_Hillenbrand2003,39,aɪ
+3718,americanenglishsouthernmichigan,au_u0061u028A,aʊ,,,jipa_Hillenbrand2003,39,aʊ
 3719,bulgarian,p_u0070,p,,,jipa_Ternes1990,30,p
 3720,bulgarian,b_u0062,b,,,jipa_Ternes1990,30,b
 3721,bulgarian,t_u0074,t,,,jipa_Ternes1990,30,t
@@ -3808,38 +3808,38 @@ ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source,InventorySize,Value_in_
 3807,tenaquichua,i_u0069,i,,,jipa_ORourke2013,23,"i(i, i̯)"
 3808,tenaquichua,a_u0061,a,,,jipa_ORourke2013,23,a
 3809,tenaquichua,u_u0075,u,,,jipa_ORourke2013,23,u
-3810,castilianspanish,p_u0070,p,,,jipa_MartnezCeeldrn2003,32,p
-3811,castilianspanish,b_u0062,b,,,jipa_MartnezCeeldrn2003,32,"b(b, β̞)"
-3812,castilianspanish,t_u0074,t,,,jipa_MartnezCeeldrn2003,32,t
-3813,castilianspanish,d_u0064,d,,,jipa_MartnezCeeldrn2003,32,"d(d, ð̞)"
-3814,castilianspanish,k_u006B,k,,,jipa_MartnezCeeldrn2003,32,k
-3815,castilianspanish,g_u0067,g,,,jipa_MartnezCeeldrn2003,32,"g(g, ɣ̞)"
-3816,castilianspanish,ts_u0074u0283,tʃ,,,jipa_MartnezCeeldrn2003,32,tʃ
-3817,castilianspanish,jj_u025Fu029D,ɟʝ,,,jipa_MartnezCeeldrn2003,32,ɟʝ
-3818,castilianspanish,m_u006D,m,,,jipa_MartnezCeeldrn2003,32,m
-3819,castilianspanish,n_u006E,n,,,jipa_MartnezCeeldrn2003,32,"n(n, ɱ, n̟, n̪, nʲ, ŋ, ɴ)"
-3820,castilianspanish,n_u0272,ɲ,,,jipa_MartnezCeeldrn2003,32,ɲ
-3821,castilianspanish,r_u027E,ɾ,,,jipa_MartnezCeeldrn2003,32,ɾ
-3822,castilianspanish,r_u0072,r,,,jipa_MartnezCeeldrn2003,32,r
-3823,castilianspanish,f_u0066,f,,,jipa_MartnezCeeldrn2003,32,f
-3824,castilianspanish,th_u03B8,θ,,,jipa_MartnezCeeldrn2003,32,"θ(θ, θ̬)"
-3825,castilianspanish,s_u0073,s,,,jipa_MartnezCeeldrn2003,32,s
-3826,castilianspanish,x_u0078,x,,,jipa_MartnezCeeldrn2003,32,x
-3827,castilianspanish,l_u006C,l,,,jipa_MartnezCeeldrn2003,32,"l(l, l̟, l̪, lʲ)"
-3828,castilianspanish,y_u028E,ʎ,,,jipa_MartnezCeeldrn2003,32,ʎ
-3829,castilianspanish,i_u0069,i,,,jipa_MartnezCeeldrn2003,32,"i(i, i̯)"
-3830,castilianspanish,e_u0065,e,,,jipa_MartnezCeeldrn2003,32,"e(e, e̯, ẽ)"
-3831,castilianspanish,a_u0061,a,,,jipa_MartnezCeeldrn2003,32,"a(a, a̯, ã)"
-3832,castilianspanish,o_u006F,o,,,jipa_MartnezCeeldrn2003,32,"o(o, o̯)"
-3833,castilianspanish,u_u0075,u,,,jipa_MartnezCeeldrn2003,32,"u(u, u̯)"
-3834,castilianspanish,je_u006Au0065,je,,,jipa_MartnezCeeldrn2003,32,je
-3835,castilianspanish,ja_u006Au0061,ja,,,jipa_MartnezCeeldrn2003,32,ja
-3836,castilianspanish,jo_u006Au006F,jo,,,jipa_MartnezCeeldrn2003,32,jo
-3837,castilianspanish,ju_u006Au0075,ju,,,jipa_MartnezCeeldrn2003,32,ju
-3838,castilianspanish,wi_u0077u0069,wi,,,jipa_MartnezCeeldrn2003,32,wi
-3839,castilianspanish,we_u0077u0065,we,,,jipa_MartnezCeeldrn2003,32,we
-3840,castilianspanish,wa_u0077u0061,wa,,,jipa_MartnezCeeldrn2003,32,wa
-3841,castilianspanish,wo_u0077u006F,wo,,,jipa_MartnezCeeldrn2003,32,wo
+3810,castilianspanish,p_u0070,p,,,jipa_MartnezCeldrn2003,32,p
+3811,castilianspanish,b_u0062,b,,,jipa_MartnezCeldrn2003,32,"b(b, β̞)"
+3812,castilianspanish,t_u0074,t,,,jipa_MartnezCeldrn2003,32,t
+3813,castilianspanish,d_u0064,d,,,jipa_MartnezCeldrn2003,32,"d(d, ð̞)"
+3814,castilianspanish,k_u006B,k,,,jipa_MartnezCeldrn2003,32,k
+3815,castilianspanish,g_u0067,g,,,jipa_MartnezCeldrn2003,32,"g(g, ɣ̞)"
+3816,castilianspanish,ts_u0074u0283,tʃ,,,jipa_MartnezCeldrn2003,32,tʃ
+3817,castilianspanish,jj_u025Fu029D,ɟʝ,,,jipa_MartnezCeldrn2003,32,ɟʝ
+3818,castilianspanish,m_u006D,m,,,jipa_MartnezCeldrn2003,32,m
+3819,castilianspanish,n_u006E,n,,,jipa_MartnezCeldrn2003,32,"n(n, ɱ, n̟, n̪, nʲ, ŋ, ɴ)"
+3820,castilianspanish,n_u0272,ɲ,,,jipa_MartnezCeldrn2003,32,ɲ
+3821,castilianspanish,r_u027E,ɾ,,,jipa_MartnezCeldrn2003,32,ɾ
+3822,castilianspanish,r_u0072,r,,,jipa_MartnezCeldrn2003,32,r
+3823,castilianspanish,f_u0066,f,,,jipa_MartnezCeldrn2003,32,f
+3824,castilianspanish,th_u03B8,θ,,,jipa_MartnezCeldrn2003,32,"θ(θ, θ̬)"
+3825,castilianspanish,s_u0073,s,,,jipa_MartnezCeldrn2003,32,s
+3826,castilianspanish,x_u0078,x,,,jipa_MartnezCeldrn2003,32,x
+3827,castilianspanish,l_u006C,l,,,jipa_MartnezCeldrn2003,32,"l(l, l̟, l̪, lʲ)"
+3828,castilianspanish,y_u028E,ʎ,,,jipa_MartnezCeldrn2003,32,ʎ
+3829,castilianspanish,i_u0069,i,,,jipa_MartnezCeldrn2003,32,"i(i, i̯)"
+3830,castilianspanish,e_u0065,e,,,jipa_MartnezCeldrn2003,32,"e(e, e̯, ẽ)"
+3831,castilianspanish,a_u0061,a,,,jipa_MartnezCeldrn2003,32,"a(a, a̯, ã)"
+3832,castilianspanish,o_u006F,o,,,jipa_MartnezCeldrn2003,32,"o(o, o̯)"
+3833,castilianspanish,u_u0075,u,,,jipa_MartnezCeldrn2003,32,"u(u, u̯)"
+3834,castilianspanish,je_u006Au0065,je,,,jipa_MartnezCeldrn2003,32,je
+3835,castilianspanish,ja_u006Au0061,ja,,,jipa_MartnezCeldrn2003,32,ja
+3836,castilianspanish,jo_u006Au006F,jo,,,jipa_MartnezCeldrn2003,32,jo
+3837,castilianspanish,ju_u006Au0075,ju,,,jipa_MartnezCeldrn2003,32,ju
+3838,castilianspanish,wi_u0077u0069,wi,,,jipa_MartnezCeldrn2003,32,wi
+3839,castilianspanish,we_u0077u0065,we,,,jipa_MartnezCeldrn2003,32,we
+3840,castilianspanish,wa_u0077u0061,wa,,,jipa_MartnezCeldrn2003,32,wa
+3841,castilianspanish,wo_u0077u006F,wo,,,jipa_MartnezCeldrn2003,32,wo
 3842,tera,p_u0070,p,,,jipa_Tench2007,61,p
 3843,tera,b_u0062,b,,,jipa_Tench2007,61,b
 3844,tera,t_u0074,t,,,jipa_Tench2007,61,t
@@ -5083,47 +5083,47 @@ ID,Language_ID,Parameter_ID,Value,Code_ID,Comment,Source,InventorySize,Value_in_
 5082,azerbaijani,o_u006F,o,,,jipa_Mokari2017,35,o
 5083,azerbaijani,ae_u00E6,æ,,,jipa_Mokari2017,35,æ
 5084,azerbaijani,a_u0251,ɑ,,,jipa_Mokari2017,35,ɑ
-5085,centralsama,p_u0070,p,,,jipa_Pallsen2012,30,"p(p, p̚)"
-5086,centralsama,p_u0070u003A,p:,,,jipa_Pallsen2012,30,p:
-5087,centralsama,b_u0062,b,,,jipa_Pallsen2012,30,"b(b, β)"
-5088,centralsama,b_u0062u003A,b:,,,jipa_Pallsen2012,30,b:
-5089,centralsama,t_u0074u032A,t̪,,,jipa_Pallsen2012,30,"t̪(t̪, t̪̚)"
-5090,centralsama,t_u0074u032Au003A,t̪:,,,jipa_Pallsen2012,30,t̪:
-5091,centralsama,d_u0064,d,,,jipa_Pallsen2012,30,"d(d, ɾ)"
-5092,centralsama,d_u0064u003A,d:,,,jipa_Pallsen2012,30,d:
-5093,centralsama,dz_u0064u0292,dʒ,,,jipa_Pallsen2012,30,dʒ
-5094,centralsama,dz_u0064u003Au0292,d:ʒ,,,jipa_Pallsen2012,30,d:ʒ
-5095,centralsama,k_u006B,k,,,jipa_Pallsen2012,30,"k(k, k̚)"
-5096,centralsama,k_u006Bu003A,k:,,,jipa_Pallsen2012,30,k:
-5097,centralsama,g_u0067,g,,,jipa_Pallsen2012,30,"g(g, ɣ)"
-5098,centralsama,g_u0067u003A,g:,,,jipa_Pallsen2012,30,g:
-5099,centralsama,_u0294,ʔ,,,jipa_Pallsen2012,30,ʔ
-5100,centralsama,m_u006D,m,,,jipa_Pallsen2012,30,m
-5101,centralsama,m_u006Du003A,m:,,,jipa_Pallsen2012,30,m:
-5102,centralsama,n_u006E,n,,,jipa_Pallsen2012,30,n
-5103,centralsama,n_u006Eu003A,n:,,,jipa_Pallsen2012,30,n:
-5104,centralsama,n_u0272,ɲ,,,jipa_Pallsen2012,30,ɲ
-5105,centralsama,ng_u014B,ŋ,,,jipa_Pallsen2012,30,ŋ
-5106,centralsama,ng_u014Bu003A,ŋ:,,,jipa_Pallsen2012,30,ŋ:
-5107,centralsama,s_u0073,s,,,jipa_Pallsen2012,30,s
-5108,centralsama,s_u0073u003A,s:,,,jipa_Pallsen2012,30,s:
-5109,centralsama,h_u0068,h,,,jipa_Pallsen2012,30,h
-5110,centralsama,w_u0077,w,,,jipa_Pallsen2012,30,w
-5111,centralsama,j_u006A,j,,,jipa_Pallsen2012,30,j
-5112,centralsama,j_u006Au003A,j:,,,jipa_Pallsen2012,30,j:
-5113,centralsama,l_u006C,l,,,jipa_Pallsen2012,30,"l(l, ɭ)"
-5114,centralsama,l_u006Cu003A,l:,,,jipa_Pallsen2012,30,l:
-5115,centralsama,i_u0069,i,,,jipa_Pallsen2012,30,"i(i, ɪ)"
-5116,centralsama,e_u0065,e,,,jipa_Pallsen2012,30,e
-5117,centralsama,_u0259,ə,,,jipa_Pallsen2012,30,ə
-5118,centralsama,a_u0061,a,,,jipa_Pallsen2012,30,"a(a, ä)"
-5119,centralsama,u_u0075,u,,,jipa_Pallsen2012,30,"u(u, ʊ)"
-5120,centralsama,o_u006F,o,,,jipa_Pallsen2012,30,o
-5121,centralsama,i_u0069u003A,i:,,,jipa_Pallsen2012,30,i:
-5122,centralsama,e_u0065u02D0,eː,,,jipa_Pallsen2012,30,eː
-5123,centralsama,a_u0061u02D0,aː,,,jipa_Pallsen2012,30,"aː(aː, äː)"
-5124,centralsama,o_u006Fu02D0,oː,,,jipa_Pallsen2012,30,oː
-5125,centralsama,u_u0075u02D0,uː,,,jipa_Pallsen2012,30,"uː(uː, ʊː)"
+5085,centralsama,p_u0070,p,,,jipa_Pallesen2012,30,"p(p, p̚)"
+5086,centralsama,p_u0070u003A,p:,,,jipa_Pallesen2012,30,p:
+5087,centralsama,b_u0062,b,,,jipa_Pallesen2012,30,"b(b, β)"
+5088,centralsama,b_u0062u003A,b:,,,jipa_Pallesen2012,30,b:
+5089,centralsama,t_u0074u032A,t̪,,,jipa_Pallesen2012,30,"t̪(t̪, t̪̚)"
+5090,centralsama,t_u0074u032Au003A,t̪:,,,jipa_Pallesen2012,30,t̪:
+5091,centralsama,d_u0064,d,,,jipa_Pallesen2012,30,"d(d, ɾ)"
+5092,centralsama,d_u0064u003A,d:,,,jipa_Pallesen2012,30,d:
+5093,centralsama,dz_u0064u0292,dʒ,,,jipa_Pallesen2012,30,dʒ
+5094,centralsama,dz_u0064u003Au0292,d:ʒ,,,jipa_Pallesen2012,30,d:ʒ
+5095,centralsama,k_u006B,k,,,jipa_Pallesen2012,30,"k(k, k̚)"
+5096,centralsama,k_u006Bu003A,k:,,,jipa_Pallesen2012,30,k:
+5097,centralsama,g_u0067,g,,,jipa_Pallesen2012,30,"g(g, ɣ)"
+5098,centralsama,g_u0067u003A,g:,,,jipa_Pallesen2012,30,g:
+5099,centralsama,_u0294,ʔ,,,jipa_Pallesen2012,30,ʔ
+5100,centralsama,m_u006D,m,,,jipa_Pallesen2012,30,m
+5101,centralsama,m_u006Du003A,m:,,,jipa_Pallesen2012,30,m:
+5102,centralsama,n_u006E,n,,,jipa_Pallesen2012,30,n
+5103,centralsama,n_u006Eu003A,n:,,,jipa_Pallesen2012,30,n:
+5104,centralsama,n_u0272,ɲ,,,jipa_Pallesen2012,30,ɲ
+5105,centralsama,ng_u014B,ŋ,,,jipa_Pallesen2012,30,ŋ
+5106,centralsama,ng_u014Bu003A,ŋ:,,,jipa_Pallesen2012,30,ŋ:
+5107,centralsama,s_u0073,s,,,jipa_Pallesen2012,30,s
+5108,centralsama,s_u0073u003A,s:,,,jipa_Pallesen2012,30,s:
+5109,centralsama,h_u0068,h,,,jipa_Pallesen2012,30,h
+5110,centralsama,w_u0077,w,,,jipa_Pallesen2012,30,w
+5111,centralsama,j_u006A,j,,,jipa_Pallesen2012,30,j
+5112,centralsama,j_u006Au003A,j:,,,jipa_Pallesen2012,30,j:
+5113,centralsama,l_u006C,l,,,jipa_Pallesen2012,30,"l(l, ɭ)"
+5114,centralsama,l_u006Cu003A,l:,,,jipa_Pallesen2012,30,l:
+5115,centralsama,i_u0069,i,,,jipa_Pallesen2012,30,"i(i, ɪ)"
+5116,centralsama,e_u0065,e,,,jipa_Pallesen2012,30,e
+5117,centralsama,_u0259,ə,,,jipa_Pallesen2012,30,ə
+5118,centralsama,a_u0061,a,,,jipa_Pallesen2012,30,"a(a, ä)"
+5119,centralsama,u_u0075,u,,,jipa_Pallesen2012,30,"u(u, ʊ)"
+5120,centralsama,o_u006F,o,,,jipa_Pallesen2012,30,o
+5121,centralsama,i_u0069u003A,i:,,,jipa_Pallesen2012,30,i:
+5122,centralsama,e_u0065u02D0,eː,,,jipa_Pallesen2012,30,eː
+5123,centralsama,a_u0061u02D0,aː,,,jipa_Pallesen2012,30,"aː(aː, äː)"
+5124,centralsama,o_u006Fu02D0,oː,,,jipa_Pallesen2012,30,oː
+5125,centralsama,u_u0075u02D0,uː,,,jipa_Pallesen2012,30,"uː(uː, ʊː)"
 5126,centralarrernte,p_u0070,p,,,jipa_Breen2005,52,p
 5127,centralarrernte,t_u0074u032A,t̪,,,jipa_Breen2005,52,t̪
 5128,centralarrernte,tj_u0074u02B2,tʲ,,,jipa_Breen2005,52,tʲ
