@@ -12,6 +12,7 @@ setup(
         ]
     },
     install_requires=[
+        'pyclts',
         'cldfbench',
     ],
     extras_require={

@@ -13,9 +13,15 @@
     "prov:wasDerivedFrom": [
         {
             "rdf:type": "prov:Entity",
+            "dc:title": "Catalog",
+            "rdf:about": "https://github.com/cldf-clts/clts",
+            "dc:created": "v2.0.0"
+        },
+        {
+            "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/cldf-datasets/jipa",
-            "dc:created": "bca4631"
+            "dc:created": "eaf6354"
         },
         {
             "rdf:type": "prov:Entity",
@@ -27,7 +33,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.2"
+            "dc:description": "3.8.5"
         },
         {
             "dc:title": "python-packages",
