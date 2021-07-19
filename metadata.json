@@ -3,6 +3,6 @@
     "title": "CLDF dataset with phoneme inventories from the \"Journal of the IPA\", aggregated by Baird et al. (forth)",
     "description": null,
     "license": "CC0-1.0",
-    "url": null,
-    "citation": null
+    "url": "https://github.com/SimonGreenhill/jipa",
+    "citation": "Baird, L., Evans, N., & Greenhill, S. J. (2021). Blowing in the wind: Using 'North Wind and the Sun' texts to sample phoneme inventories. Journal of the International Phonetic Association, 1–42. doi:10.1017/s002510032000033x"
 }
