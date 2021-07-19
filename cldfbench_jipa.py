@@ -1,6 +1,6 @@
 """
 Generates a CLDF dataset for phoneme inventories from the "Journal of the IPA",
-aggregated by Baird et al. (forth).
+aggregated by Baird et al. 2021.
 """
 
 import json
@@ -89,12 +89,14 @@ def read_raw_source(filename):
             elif section == "Consonant Inventory":
                 data["consonants"] += ' ' + line
             elif section == "Vowel Inventory":
+
                 data["vowels"] += ' ' + line
             elif section in [
                 "Phoneme inventory size",
                 "Phoneme invetory size",
                 "Size of phoneme inventory"
             ]:
+
                 data["inventory"] = int(line)
     data['consonants'] = _splitter(data['consonants'].strip())
     data['vowels'] = _splitter(data['vowels'].strip())
