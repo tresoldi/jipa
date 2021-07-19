@@ -12,6 +12,8 @@ setup(
         ]
     },
     install_requires=[
+        'pyglottolog',
+        'pyclts',
         'cldfbench',
     ],
     extras_require={
