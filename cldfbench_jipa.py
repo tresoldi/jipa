@@ -1,6 +1,6 @@
 """
 Generates a CLDF dataset for phoneme inventories from the "Journal of the IPA",
-aggregated by Baird et al. (forth).
+aggregated by Baird et al. 2021.
 """
 
 import json
